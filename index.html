@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profit Loss Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Profit Loss Calculator</h1>
+   
+    <div class="input-group">
+      <label for="CP">Cost Price (₹)</label>
+      <input type="number" id="CP" placeholder="Enter your Cost Price" step="0.01" min="0">
+    </div>
+   
+    <div class="input-group">
+      <label for="SP">Selling Price (₹)</label>
+      <input type="number" id="SP" placeholder="Enter your Selling Price" step="0.01" min="0">
+    </div>
+   
+    <button onclick="Calculate()">Calculate Profit/Loss</button>
+   
+    <div id="result" class="result" style="display: none;"></div>
+  </div>
+  <script src="script.js"></script>
+  
+</body>
+</html>
